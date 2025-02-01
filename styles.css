@@ -1,0 +1,77 @@
+/* All styles go here */
+body {
+    background-color: #f0f0f0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: 20px 0;
+}
+
+.city-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(50% - 20px);
+    max-width: 300px;
+    min-width: 200px;
+}
+
+.city-card img {
+    width: 60px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    .city-card {
+        flex: 1 1 100%;
+    }
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.google-search input {
+    padding: 8px;
+    width: 200px;
+}
+
+.google-search button {
+    padding: 8px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

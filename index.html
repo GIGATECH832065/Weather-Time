@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIGATECH</title>
+    <p>24hr World Clock & Weather Station</p>
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS -->
+</head>
+<body>
+
+    <header>
+        <h1>GIGATECH World Clock & Weather</h1>
+    </header>
+
+    <div class="container">
+        <div class="city-card">
+            <h2>London</h2>
+            <img src="https://flagsapi.com/GB/flat/64.png" alt="London flag">
+            <p id="londonTime"></p>
+            <p id="londonTemp"></p>
+        </div>
+
+        <div class="city-card">
+            <h2>Beijing</h2>
+            <img src="https://flagsapi.com/CN/flat/64.png" alt="Beijing flag">
+            <p id="beijingTime"></p>
+            <p id="beijingTemp"></p>
+        </div>
+
+        <div class="city-card">
+            <h2>New York</h2>
+            <img src="https://flagsapi.com/US/flat/64.png" alt="New York flag">
+            <p id="newYorkTime"></p>
+            <p id="newYorkTemp"></p>
+        </div>
+
+        <div class="city-card">
+            <h2>Honolulu</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Flag_of_Hawaii.svg" alt="Hawaii flag">
+            <p id="honoluluTime"></p>
+            <p id="honoluluTemp"></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p id="localTemp"></p>
+            <div class="google-search">
+                <input type="text" id="searchQuery" placeholder="Search Google">
+                <button onclick="searchGoogle()">Search</button>
+            </div>
+            <p>© 2025 GIGATECH. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script> <!-- External JS -->
+</body>
+</html>
